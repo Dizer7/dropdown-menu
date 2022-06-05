@@ -3,7 +3,8 @@
     <head>
         <meta charset="utf-8">
         <title>Главная страница сайта</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="css/media.css" type="text/css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,25 +22,32 @@
     <header>
             <!--<a href="">Logo</a>-->
             <nav class="main-menu">
+                <input type="checkbox" name="toggle" id="menu" class="toggleMenu">
+                <label for="menu" class="toggleMenu"><i class="fa fa-bars"></i>Меню</label>
 <ul>
     <li><a href="#"><i class="fa fa-car"></i>Главная</a></li>
     <li><a href="#"><i class="fa fa-car"></i>Продукция</a></li>
-    <li><a href="#"><i class="fa fa-car"></i>Услуги</a>
-    <ul>
-        <li><a href="#">Строительство</a></li>
-        <li><a href="#">Комуникации</a>
-        <ul>
-            <li><a href="#">Вода</a></li>
-            <li><a href="#">Электричество</a></li>
-            <li><a href="#">Газ</a></li>
-            <li><a href="#">Канализация</a></li>
-            <li><a href="#">Интернет</a></li>
-        </ul>
-        
-        </li>
-        <li><a href="#">Ландшафт</a></li>
-        <li><a href="#">Безопасность</a></li>
-        <li><a href="#">Ремонт</a></li>
+    <li>
+        <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1">
+        <a href="#"><i class="fa fa-shopping-cart"></i>Услуги</a>
+        <label for="sub_m1" class="toggleSubmenu"><i class="fa"></i></label>
+           <ul>
+           <li><a href="#">Строительство</a></li>
+           <li>
+               <input type="checkbox" name="toggle" class="toggleSubmenu" id="sub_m1-1">
+               <a href="#">Комуникации</a>
+               <label for="sub_m1-1" class="toggleSubmenu"><i class="fa"></i></label>
+               <ul>
+               <li><a href="#">Вода</a></li>
+               <li><a href="#">Электричество</a></li>
+               <li><a href="#">Газ</a></li>
+               <li><a href="#">Канализация</a></li>
+               <li><a href="#">Интернет</a></li>
+               </ul>    
+           </li>
+    <li><a href="#">Ландшафт</a></li>
+    <li><a href="#">Безопасность</a></li>
+    <li><a href="#">Ремонт</a></li>
     </ul>
     
     
