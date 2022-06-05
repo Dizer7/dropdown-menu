@@ -3,7 +3,7 @@ body {
 }
 
 header {
-    margin-top:200px;
+    /*margin-top:200px;*/
     font-family: Cuprum, Arial, Helvetica, sans-serif;
 }
 
@@ -90,6 +90,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', end
     padding:10px;
     text-transform: none;
     background: #ECECEC;
+    font-size: 18px;
 }
 
 .main-menu li > ul li ul {
